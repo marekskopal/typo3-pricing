@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf">
+        <body>
+            <trans-unit id="tx_mspricing_plan">
+                <source>Plan</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan.subtitle">
+                <source>Subtitle</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan.price_monthly">
+                <source>Monthly Price</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan.price_yearly">
+                <source>Yearly Price</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan.currency">
+                <source>Currency Symbol</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan.css_class">
+                <source>CSS Class</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan.plan_features">
+                <source>Plan Features</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan.tab.features">
+                <source>Features</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_feature_group">
+                <source>Feature Group</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_feature_group.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_feature">
+                <source>Feature</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_feature.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_feature.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_feature.feature_group">
+                <source>Feature Group</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_feature.feature_group.none">
+                <source>&#8212; No Group &#8212;</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan_feature">
+                <source>Plan Feature</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan_feature.feature">
+                <source>Feature</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan_feature.value_type">
+                <source>Value Type</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan_feature.value_type.available">
+                <source>Available</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan_feature.value_type.unavailable">
+                <source>Unavailable</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan_feature.value_type.text">
+                <source>Custom Text</source>
+            </trans-unit>
+            <trans-unit id="tx_mspricing_plan_feature.value_text">
+                <source>Value Text</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

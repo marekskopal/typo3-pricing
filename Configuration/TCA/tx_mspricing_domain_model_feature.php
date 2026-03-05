@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_feature',
+        'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature',
         'label' => 'name',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
@@ -28,7 +28,7 @@ return [
             ],
         ],
         'name' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_feature.name',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature.name',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -38,7 +38,7 @@ return [
             ],
         ],
         'description' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_feature.description',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature.description',
             'config' => [
                 'type' => 'text',
                 'rows' => 4,
@@ -46,14 +46,14 @@ return [
             ],
         ],
         'feature_group' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_feature.feature_group',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature.feature_group',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_mspricing_domain_model_featuregroup',
                 'foreign_table_where' => 'ORDER BY tx_mspricing_domain_model_featuregroup.sorting ASC',
                 'items' => [
-                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_feature.feature_group.none', 'value' => 0],
+                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature.feature_group.none', 'value' => 0],
                 ],
                 'default' => 0,
             ],

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan_feature',
+        'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature',
         'label' => 'feature',
         'label_userFunc' => '',
         'sortby' => 'sorting',
@@ -35,7 +35,7 @@ return [
             ],
         ],
         'feature' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan_feature.feature',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.feature',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -48,20 +48,20 @@ return [
             ],
         ],
         'value_type' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan_feature.value_type',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.value_type',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan_feature.value_type.available', 'value' => 'available'],
-                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan_feature.value_type.unavailable', 'value' => 'unavailable'],
-                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan_feature.value_type.text', 'value' => 'text'],
+                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.value_type.available', 'value' => 'available'],
+                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.value_type.unavailable', 'value' => 'unavailable'],
+                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.value_type.text', 'value' => 'text'],
                 ],
                 'default' => 'unavailable',
             ],
         ],
         'value_text' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan_feature.value_text',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.value_text',
             'displayCond' => 'FIELD:value_type:=:text',
             'config' => [
                 'type' => 'input',

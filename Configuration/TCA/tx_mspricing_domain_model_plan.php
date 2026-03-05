@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan',
+        'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan',
         'label' => 'name',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
@@ -28,7 +28,7 @@ return [
             ],
         ],
         'name' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.name',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.name',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -38,7 +38,7 @@ return [
             ],
         ],
         'subtitle' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.subtitle',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.subtitle',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -47,7 +47,7 @@ return [
             ],
         ],
         'price_monthly' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.price_monthly',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.price_monthly',
             'config' => [
                 'type' => 'number',
                 'format' => 'decimal',
@@ -55,7 +55,7 @@ return [
             ],
         ],
         'price_yearly' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.price_yearly',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.price_yearly',
             'config' => [
                 'type' => 'number',
                 'format' => 'decimal',
@@ -63,7 +63,7 @@ return [
             ],
         ],
         'currency' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.currency',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.currency',
             'config' => [
                 'type' => 'input',
                 'size' => 10,
@@ -73,7 +73,7 @@ return [
             ],
         ],
         'css_class' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.css_class',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.css_class',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -82,7 +82,7 @@ return [
             ],
         ],
         'plan_features' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.plan_features',
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.plan_features',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_mspricing_domain_model_planfeature',
@@ -115,7 +115,7 @@ return [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                     name, subtitle, currency, price_monthly, price_yearly, css_class,
-                --div--;LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.tab.features,
+                --div--;LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.tab.features,
                     plan_features,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                     hidden
