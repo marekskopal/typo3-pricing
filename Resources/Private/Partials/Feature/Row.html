@@ -12,7 +12,7 @@
         </f:if>
     </td>
     <f:for each="{plans}" as="plan">
-        <td class="mspricing-cell {f:if(condition: plan.highlighted, then: 'mspricing-cell--highlighted')}">
+        <td class="mspricing-cell {plan.cssClass}">
             <f:variable name="planUid" value="{plan.uid}" />
             <msp:cellValue planFeature="{featureRow.values.{planUid}}" />
         </td>

@@ -4,7 +4,7 @@ CREATE TABLE tx_mspricing_domain_model_plan (
     price_monthly decimal(10,2) DEFAULT NULL,
     price_yearly decimal(10,2) DEFAULT NULL,
     currency varchar(10) NOT NULL DEFAULT '$',
-    highlighted tinyint(1) NOT NULL DEFAULT 0
+    css_class varchar(255) NOT NULL DEFAULT ''
 );
 
 CREATE TABLE tx_mspricing_domain_model_featuregroup (

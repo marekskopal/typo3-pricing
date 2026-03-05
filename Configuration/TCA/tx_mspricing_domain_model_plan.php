@@ -72,12 +72,13 @@ return [
                 'default' => '$',
             ],
         ],
-        'highlighted' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.highlighted',
+        'css_class' => [
+            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.css_class',
             'config' => [
-                'type' => 'check',
-                'renderType' => 'checkboxToggle',
-                'default' => 0,
+                'type' => 'input',
+                'size' => 40,
+                'max' => 255,
+                'eval' => 'trim',
             ],
         ],
         'plan_features' => [
@@ -113,7 +114,7 @@ return [
         '0' => [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                    name, subtitle, currency, price_monthly, price_yearly, highlighted,
+                    name, subtitle, currency, price_monthly, price_yearly, css_class,
                 --div--;LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.tab.features,
                     plan_features,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,

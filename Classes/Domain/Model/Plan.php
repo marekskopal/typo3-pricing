@@ -19,7 +19,7 @@ class Plan extends AbstractEntity
 
     protected string $currency = '$';
 
-    protected bool $highlighted = false;
+    protected string $cssClass = '';
 
     /** @var ObjectStorage<PlanFeature> */
     protected ObjectStorage $planFeatures;
@@ -54,9 +54,9 @@ class Plan extends AbstractEntity
         return $this->currency;
     }
 
-    public function isHighlighted(): bool
+    public function getCssClass(): string
     {
-        return $this->highlighted;
+        return $this->cssClass;
     }
 
     /** @return ObjectStorage<PlanFeature> */

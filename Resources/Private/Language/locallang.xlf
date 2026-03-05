@@ -35,8 +35,8 @@
             <trans-unit id="tx_mspricing_plan.currency">
                 <source>Currency Symbol</source>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan.highlighted">
-                <source>Highlighted</source>
+            <trans-unit id="tx_mspricing_plan.css_class">
+                <source>CSS Class</source>
             </trans-unit>
             <trans-unit id="tx_mspricing_plan.plan_features">
                 <source>Plan Features</source>

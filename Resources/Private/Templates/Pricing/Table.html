@@ -22,7 +22,7 @@
                 <tr>
                     <th class="mspricing-feature-col"></th>
                     <f:for each="{plans}" as="plan">
-                        <th class="mspricing-plan {f:if(condition: plan.highlighted, then: 'mspricing-plan--highlighted')}">
+                        <th class="mspricing-plan {plan.cssClass}">
                             <f:render partial="Plan/Header" arguments="{plan: plan}" />
                         </th>
                     </f:for>
