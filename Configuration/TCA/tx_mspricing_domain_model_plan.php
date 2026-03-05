@@ -84,7 +84,7 @@ return [
             'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_plan.plan_features',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' => 'tx_mspricing_plan_feature',
+                'foreign_table' => 'tx_mspricing_domain_model_planfeature',
                 'foreign_field' => 'plan',
                 'foreign_sortby' => 'sorting',
                 'appearance' => [

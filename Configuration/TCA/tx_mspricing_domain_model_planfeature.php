@@ -39,8 +39,8 @@ return [
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_mspricing_feature',
-                'foreign_table_where' => 'ORDER BY tx_mspricing_feature.sorting ASC',
+                'foreign_table' => 'tx_mspricing_domain_model_feature',
+                'foreign_table_where' => 'ORDER BY tx_mspricing_domain_model_feature.sorting ASC',
                 'items' => [
                     ['label' => '', 'value' => 0],
                 ],

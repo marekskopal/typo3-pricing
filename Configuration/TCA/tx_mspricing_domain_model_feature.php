@@ -50,8 +50,8 @@ return [
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_mspricing_feature_group',
-                'foreign_table_where' => 'ORDER BY tx_mspricing_feature_group.sorting ASC',
+                'foreign_table' => 'tx_mspricing_domain_model_featuregroup',
+                'foreign_table_where' => 'ORDER BY tx_mspricing_domain_model_featuregroup.sorting ASC',
                 'items' => [
                     ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:tx_mspricing_feature.feature_group.none', 'value' => 0],
                 ],
