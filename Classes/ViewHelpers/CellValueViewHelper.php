@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MarekSkopal\MsPricing\ViewHelper;
+namespace MarekSkopal\MsPricing\ViewHelpers;
 
 use MarekSkopal\MsPricing\Domain\Model\PlanFeature;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
