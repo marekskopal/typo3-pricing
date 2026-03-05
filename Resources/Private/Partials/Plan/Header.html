@@ -1,0 +1,25 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<span class="mspricing-plan__name">{plan.name}</span>
+<f:if condition="{plan.subtitle}">
+    <span class="mspricing-plan__subtitle">{plan.subtitle}</span>
+</f:if>
+<f:if condition="{plan.priceMonthly}">
+    <f:then>
+        <span class="mspricing-plan__price" data-mspricing-price="monthly">
+            {plan.currency}{plan.priceMonthly -> f:format.number(decimals: 2)} / <f:translate key="LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:period.month" />
+        </span>
+        <span class="mspricing-plan__price mspricing-plan__price--hidden" data-mspricing-price="yearly">
+            {plan.currency}{plan.priceYearly -> f:format.number(decimals: 2)} / <f:translate key="LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:period.year" />
+        </span>
+    </f:then>
+    <f:else>
+        <span class="mspricing-plan__price">
+            <f:translate key="LLL:EXT:ms_pricing/Resources/Private/Language/locallang.xlf:price.free" />
+        </span>
+    </f:else>
+</f:if>
+</html>

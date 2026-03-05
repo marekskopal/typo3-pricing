@@ -1,0 +1,24 @@
+plugin.tx_mspricing {
+    view {
+        templateRootPaths {
+            0 = EXT:ms_pricing/Resources/Private/Templates/
+            1 = {$plugin.tx_mspricing.view.templateRootPath}
+        }
+
+        partialRootPaths {
+            0 = EXT:ms_pricing/Resources/Private/Partials/
+            1 = {$plugin.tx_mspricing.view.partialRootPath}
+        }
+
+        layoutRootPaths {
+            0 = EXT:ms_pricing/Resources/Private/Layouts/
+            1 = {$plugin.tx_mspricing.view.layoutRootPath}
+        }
+    }
+    settings {
+        currency = {$plugin.tx_mspricing.settings.currency}
+    }
+}
+
+page.includeCSS.mspricing = EXT:ms_pricing/Resources/Public/Css/Pricing.css
+page.includeJSFooter.mspricing = EXT:ms_pricing/Resources/Public/JavaScript/Pricing.js

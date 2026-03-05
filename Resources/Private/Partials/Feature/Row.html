@@ -1,0 +1,21 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:msp="http://typo3.org/ns/MarekSkopal/MsPricing/ViewHelpers"
+    data-namespace-typo3-fluid="true"
+>
+
+<tr class="mspricing-feature-row">
+    <td class="mspricing-feature__name">
+        {featureRow.feature.name}
+        <f:if condition="{featureRow.feature.description}">
+            <span class="mspricing-feature__tooltip" title="{featureRow.feature.description}" aria-label="{featureRow.feature.description}">?</span>
+        </f:if>
+    </td>
+    <f:for each="{plans}" as="plan">
+        <td class="mspricing-cell {f:if(condition: plan.highlighted, then: 'mspricing-cell--highlighted')}">
+            <f:variable name="planUid" value="{plan.uid}" />
+            <msp:cellValue planFeature="{featureRow.values.{planUid}}" />
+        </td>
+    </f:for>
+</tr>
+</html>

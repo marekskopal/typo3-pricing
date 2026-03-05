@@ -1,0 +1,10 @@
+plugin.tx_mspricing {
+    view {
+        templateRootPath =
+        partialRootPath =
+        layoutRootPath =
+    }
+    settings {
+        currency = $
+    }
+}
