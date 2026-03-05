@@ -6,7 +6,6 @@ return [
     'ctrl' => [
         'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature',
         'label' => 'feature',
-        'label_userFunc' => '',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
