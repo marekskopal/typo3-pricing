@@ -2,13 +2,19 @@
 
 declare(strict_types=1);
 
+$llPath = 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf';
+$table = 'tx_mspricing_domain_model_feature';
+
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature',
+        'title' => $llPath . ':' . $table,
         'label' => 'name',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
         'enablecolumns' => [
             'disabled' => 'hidden',
@@ -28,7 +34,7 @@ return [
             ],
         ],
         'name' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature.name',
+            'label' => $llPath . ':' . $table . '.name',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -38,7 +44,7 @@ return [
             ],
         ],
         'description' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature.description',
+            'label' => $llPath . ':' . $table . '.description',
             'config' => [
                 'type' => 'text',
                 'rows' => 4,
@@ -46,14 +52,14 @@ return [
             ],
         ],
         'feature_group' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature.feature_group',
+            'label' => $llPath . ':' . $table . '.feature_group',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'foreign_table' => 'tx_mspricing_domain_model_featuregroup',
                 'foreign_table_where' => 'ORDER BY tx_mspricing_domain_model_featuregroup.sorting ASC',
                 'items' => [
-                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature.feature_group.none', 'value' => 0],
+                    ['label' => $llPath . ':' . $table . '.feature_group.none', 'value' => 0],
                 ],
                 'default' => 0,
             ],

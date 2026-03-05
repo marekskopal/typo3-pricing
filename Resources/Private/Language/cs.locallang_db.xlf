@@ -2,95 +2,95 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" target-language="cs" datatype="plaintext" original="EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf">
         <body>
-            <trans-unit id="tx_mspricing_plan">
+            <trans-unit id="tx_mspricing_domain_model_plan">
                 <source>Plan</source>
                 <target>Tarif</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan.name">
+            <trans-unit id="tx_mspricing_domain_model_plan.name">
                 <source>Name</source>
                 <target>Název</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan.subtitle">
+            <trans-unit id="tx_mspricing_domain_model_plan.subtitle">
                 <source>Subtitle</source>
                 <target>Podtitulek</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan.price_monthly">
+            <trans-unit id="tx_mspricing_domain_model_plan.price_monthly">
                 <source>Monthly Price</source>
                 <target>Měsíční cena</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan.price_yearly">
+            <trans-unit id="tx_mspricing_domain_model_plan.price_yearly">
                 <source>Yearly Price</source>
                 <target>Roční cena</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan.currency">
+            <trans-unit id="tx_mspricing_domain_model_plan.currency">
                 <source>Currency Symbol</source>
                 <target>Symbol měny</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan.css_class">
+            <trans-unit id="tx_mspricing_domain_model_plan.css_class">
                 <source>CSS Class</source>
                 <target>CSS třída</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan.plan_features">
+            <trans-unit id="tx_mspricing_domain_model_plan.plan_features">
                 <source>Plan Features</source>
                 <target>Funkce tarifu</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan.tab.features">
+            <trans-unit id="tx_mspricing_domain_model_plan.tab.features">
                 <source>Features</source>
                 <target>Funkce</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_feature_group">
+            <trans-unit id="tx_mspricing_domain_model_featuregroup">
                 <source>Feature Group</source>
                 <target>Skupina funkcí</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_feature_group.name">
+            <trans-unit id="tx_mspricing_domain_model_featuregroup.name">
                 <source>Name</source>
                 <target>Název</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_feature">
+            <trans-unit id="tx_mspricing_domain_model_feature">
                 <source>Feature</source>
                 <target>Funkce</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_feature.name">
+            <trans-unit id="tx_mspricing_domain_model_feature.name">
                 <source>Name</source>
                 <target>Název</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_feature.description">
+            <trans-unit id="tx_mspricing_domain_model_feature.description">
                 <source>Description</source>
                 <target>Popis</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_feature.feature_group">
+            <trans-unit id="tx_mspricing_domain_model_feature.feature_group">
                 <source>Feature Group</source>
                 <target>Skupina funkcí</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_feature.feature_group.none">
+            <trans-unit id="tx_mspricing_domain_model_feature.feature_group.none">
                 <source>&#8212; No Group &#8212;</source>
                 <target>&#8212; Bez skupiny &#8212;</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan_feature">
+            <trans-unit id="tx_mspricing_domain_model_planfeature">
                 <source>Plan Feature</source>
                 <target>Funkce tarifu</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan_feature.feature">
+            <trans-unit id="tx_mspricing_domain_model_planfeature.feature">
                 <source>Feature</source>
                 <target>Funkce</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan_feature.value_type">
+            <trans-unit id="tx_mspricing_domain_model_planfeature.value_type">
                 <source>Value Type</source>
                 <target>Typ hodnoty</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan_feature.value_type.available">
+            <trans-unit id="tx_mspricing_domain_model_planfeature.value_type.available">
                 <source>Available</source>
                 <target>Dostupné</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan_feature.value_type.unavailable">
+            <trans-unit id="tx_mspricing_domain_model_planfeature.value_type.unavailable">
                 <source>Unavailable</source>
                 <target>Nedostupné</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan_feature.value_type.text">
+            <trans-unit id="tx_mspricing_domain_model_planfeature.value_type.text">
                 <source>Custom Text</source>
                 <target>Vlastní text</target>
             </trans-unit>
-            <trans-unit id="tx_mspricing_plan_feature.value_text">
+            <trans-unit id="tx_mspricing_domain_model_planfeature.value_text">
                 <source>Value Text</source>
                 <target>Text hodnoty</target>
             </trans-unit>

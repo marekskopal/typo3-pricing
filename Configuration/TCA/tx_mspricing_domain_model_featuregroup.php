@@ -2,13 +2,19 @@
 
 declare(strict_types=1);
 
+$llPath = 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf';
+$table = 'tx_mspricing_domain_model_featuregroup';
+
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature_group',
+        'title' => $llPath . ':' . $table,
         'label' => 'name',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
         'enablecolumns' => [
             'disabled' => 'hidden',
@@ -28,7 +34,7 @@ return [
             ],
         ],
         'name' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_feature_group.name',
+            'label' => $llPath . ':' . $table . '.name',
             'config' => [
                 'type' => 'input',
                 'size' => 40,

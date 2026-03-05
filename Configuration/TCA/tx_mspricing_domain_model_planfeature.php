@@ -2,13 +2,19 @@
 
 declare(strict_types=1);
 
+$llPath = 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf';
+$table = 'tx_mspricing_domain_model_planfeature';
+
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature',
+        'title' => $llPath . ':' . $table,
         'label' => 'feature',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
         'enablecolumns' => [
             'disabled' => 'hidden',
@@ -34,7 +40,7 @@ return [
             ],
         ],
         'feature' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.feature',
+            'label' => $llPath . ':' . $table . '.feature',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -47,20 +53,20 @@ return [
             ],
         ],
         'value_type' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.value_type',
+            'label' => $llPath . ':' . $table . '.value_type',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.value_type.available', 'value' => 'available'],
-                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.value_type.unavailable', 'value' => 'unavailable'],
-                    ['label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.value_type.text', 'value' => 'text'],
+                    ['label' => $llPath . ':' . $table . '.value_type.available', 'value' => 'available'],
+                    ['label' => $llPath . ':' . $table . '.value_type.unavailable', 'value' => 'unavailable'],
+                    ['label' => $llPath . ':' . $table . '.value_type.text', 'value' => 'text'],
                 ],
                 'default' => 'unavailable',
             ],
         ],
         'value_text' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan_feature.value_text',
+            'label' => $llPath . ':' . $table . '.value_text',
             'displayCond' => 'FIELD:value_type:=:text',
             'config' => [
                 'type' => 'input',

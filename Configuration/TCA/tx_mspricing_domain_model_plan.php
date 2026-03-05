@@ -2,13 +2,19 @@
 
 declare(strict_types=1);
 
+$llPath = 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf';
+$table = 'tx_mspricing_domain_model_plan';
+
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan',
+        'title' => $llPath . ':' . $table,
         'label' => 'name',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
+        'languageField' => 'sys_language_uid',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
         'enablecolumns' => [
             'disabled' => 'hidden',
@@ -28,7 +34,7 @@ return [
             ],
         ],
         'name' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.name',
+            'label' => $llPath . ':' . $table . '.name',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -38,7 +44,7 @@ return [
             ],
         ],
         'subtitle' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.subtitle',
+            'label' => $llPath . ':' . $table . '.subtitle',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -47,7 +53,7 @@ return [
             ],
         ],
         'price_monthly' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.price_monthly',
+            'label' => $llPath . ':' . $table . '.price_monthly',
             'config' => [
                 'type' => 'number',
                 'format' => 'decimal',
@@ -55,7 +61,7 @@ return [
             ],
         ],
         'price_yearly' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.price_yearly',
+            'label' => $llPath . ':' . $table . '.price_yearly',
             'config' => [
                 'type' => 'number',
                 'format' => 'decimal',
@@ -63,7 +69,7 @@ return [
             ],
         ],
         'currency' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.currency',
+            'label' => $llPath . ':' . $table . '.currency',
             'config' => [
                 'type' => 'input',
                 'size' => 10,
@@ -73,7 +79,7 @@ return [
             ],
         ],
         'css_class' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.css_class',
+            'label' => $llPath . ':' . $table . '.css_class',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -82,7 +88,7 @@ return [
             ],
         ],
         'plan_features' => [
-            'label' => 'LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.plan_features',
+            'label' => $llPath . ':' . $table . '.plan_features',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_mspricing_domain_model_planfeature',
@@ -115,7 +121,7 @@ return [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                     name, subtitle, currency, price_monthly, price_yearly, css_class,
-                --div--;LLL:EXT:ms_pricing/Resources/Private/Language/locallang_db.xlf:tx_mspricing_plan.tab.features,
+                --div--;' . $llPath . ':' . $table . '.tab.features,
                     plan_features,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
                     hidden
