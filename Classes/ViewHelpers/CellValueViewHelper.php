@@ -28,6 +28,7 @@ class CellValueViewHelper extends AbstractViewHelper
 
         return match ($planFeature->getValueType()) {
             'available' => '<svg class="mspricing-check" aria-label="Included" role="img" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polyline points="2,8 6,12 14,4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+            'unlimited' => '<span aria-label="Unlimited">&infin;</span>',
             'text' => '<span>' . htmlspecialchars($planFeature->getValueText()) . '</span>',
             default => '<span aria-label="Not included">&ndash;</span>',
         };

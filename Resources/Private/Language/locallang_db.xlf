@@ -65,6 +65,9 @@
             <trans-unit id="tx_mspricing_domain_model_planfeature.value_type.unavailable">
                 <source>Unavailable</source>
             </trans-unit>
+            <trans-unit id="tx_mspricing_domain_model_planfeature.value_type.unlimited">
+                <source>Unlimited</source>
+            </trans-unit>
             <trans-unit id="tx_mspricing_domain_model_planfeature.value_type.text">
                 <source>Custom Text</source>
             </trans-unit>

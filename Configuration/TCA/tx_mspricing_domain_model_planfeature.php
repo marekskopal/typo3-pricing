@@ -60,6 +60,7 @@ return [
                 'items' => [
                     ['label' => $llPath . ':' . $table . '.value_type.available', 'value' => 'available'],
                     ['label' => $llPath . ':' . $table . '.value_type.unavailable', 'value' => 'unavailable'],
+                    ['label' => $llPath . ':' . $table . '.value_type.unlimited', 'value' => 'unlimited'],
                     ['label' => $llPath . ':' . $table . '.value_type.text', 'value' => 'text'],
                 ],
                 'default' => 'unavailable',

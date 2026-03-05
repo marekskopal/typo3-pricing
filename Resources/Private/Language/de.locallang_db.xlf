@@ -86,6 +86,10 @@
                 <source>Unavailable</source>
                 <target>Nicht verfügbar</target>
             </trans-unit>
+            <trans-unit id="tx_mspricing_domain_model_planfeature.value_type.unlimited">
+                <source>Unlimited</source>
+                <target>Unbegrenzt</target>
+            </trans-unit>
             <trans-unit id="tx_mspricing_domain_model_planfeature.value_type.text">
                 <source>Custom Text</source>
                 <target>Benutzerdefinierter Text</target>
