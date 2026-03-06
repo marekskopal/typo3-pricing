@@ -12,6 +12,10 @@ Dynamic pricing comparison table as a content element in TYPO3. Plans, features,
 - Optional tooltip per feature (via description field)
 - Customizable templates and styling
 
+## Example
+
+Live example: [fingather.com/pricing](https://www.fingather.com/pricing)
+
 ## Requirements
 
 - PHP 8.3+
