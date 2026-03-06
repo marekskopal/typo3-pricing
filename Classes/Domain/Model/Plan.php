@@ -21,6 +21,8 @@ class Plan extends AbstractEntity
 
     protected string $cssClass = '';
 
+    protected int $l10nParent = 0;
+
     /** @var ObjectStorage<PlanFeature> */
     protected ObjectStorage $planFeatures;
 
@@ -57,6 +59,11 @@ class Plan extends AbstractEntity
     public function getCssClass(): string
     {
         return $this->cssClass;
+    }
+
+    public function getL10nParent(): int
+    {
+        return $this->l10nParent;
     }
 
     /** @return ObjectStorage<PlanFeature> */

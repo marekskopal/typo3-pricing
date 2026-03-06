@@ -10,6 +10,7 @@ use MarekSkopal\MsPricing\Domain\Model\Plan;
 use MarekSkopal\MsPricing\Domain\Model\PlanFeature;
 use MarekSkopal\MsPricing\Domain\Repository\FeatureGroupRepository;
 use MarekSkopal\MsPricing\Domain\Repository\FeatureRepository;
+use MarekSkopal\MsPricing\Domain\Repository\PlanFeatureRepository;
 use MarekSkopal\MsPricing\Domain\Repository\PlanRepository;
 use MarekSkopal\MsPricing\Dto\FeatureRowDto;
 use MarekSkopal\MsPricing\Dto\PricingGroupDto;
@@ -20,6 +21,7 @@ class PricingTableService
         private readonly PlanRepository $planRepository,
         private readonly FeatureGroupRepository $featureGroupRepository,
         private readonly FeatureRepository $featureRepository,
+        private readonly PlanFeatureRepository $planFeatureRepository,
     ) {
     }
 
@@ -57,16 +59,23 @@ class PricingTableService
         $lookup = [];
 
         foreach ($plans as $plan) {
-            foreach ($plan->getPlanFeatures() as $planFeature) {
+            $planUid = $plan->getUid();
+            if ($planUid === null) {
+                continue;
+            }
+
+            $l10nParent = $plan->getL10nParent();
+            $originalPlanUid = $l10nParent !== 0 ? $l10nParent : $planUid;
+
+            foreach ($this->planFeatureRepository->findByPlanUid($originalPlanUid) as $planFeature) {
                 $feature = $planFeature->getFeature();
                 if ($feature === null) {
                     continue;
                 }
 
-                $featureUid = $feature->getUid();
-                $planUid = $plan->getUid();
-
-                if ($featureUid === null || $planUid === null) {
+                $featureL10nParent = $feature->getL10nParent();
+                $featureUid = $featureL10nParent !== 0 ? $featureL10nParent : $feature->getUid();
+                if ($featureUid === null) {
                     continue;
                 }
 
@@ -96,7 +105,8 @@ class PricingTableService
                 $groupsMap[$groupKey] = new PricingGroupDto(group: $group, features: []);
             }
 
-            $featureUid = $feature->getUid();
+            $featureL10nParent = $feature->getL10nParent();
+            $featureUid = $featureL10nParent !== 0 ? $featureL10nParent : $feature->getUid();
             $values = $featureUid !== null ? ($lookup[$featureUid] ?? []) : [];
 
             $groupsMap[$groupKey] = new PricingGroupDto(

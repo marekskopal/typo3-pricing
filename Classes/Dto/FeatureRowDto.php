@@ -10,9 +10,7 @@ use MarekSkopal\MsPricing\Domain\Model\PlanFeature;
 final class FeatureRowDto
 {
     /** @param array<int, PlanFeature> $values */
-    public function __construct(
-        public readonly Feature $feature,
-        public readonly array $values,
-    ) {
+    public function __construct(public readonly Feature $feature, public readonly array $values,)
+    {
     }
 }

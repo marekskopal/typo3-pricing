@@ -8,6 +8,8 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 class PlanFeature extends AbstractEntity
 {
+    protected int $plan = 0;
+
     protected ?Feature $feature = null;
 
     protected string $valueType = 'unavailable';

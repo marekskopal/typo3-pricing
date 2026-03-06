@@ -12,6 +12,8 @@ class Feature extends AbstractEntity
 
     protected string $description = '';
 
+    protected int $l10nParent = 0;
+
     protected ?FeatureGroup $featureGroup = null;
 
     public function getName(): string
@@ -22,6 +24,11 @@ class Feature extends AbstractEntity
     public function getDescription(): string
     {
         return $this->description;
+    }
+
+    public function getL10nParent(): int
+    {
+        return $this->l10nParent;
     }
 
     public function getFeatureGroup(): ?FeatureGroup
