@@ -100,9 +100,6 @@ return [
                     'newRecordLinkAddTitle' => true,
                     'levelLinksPosition' => 'bottom',
                     'useSortable' => true,
-                    'showPossibleLocalizationRecords' => true,
-                    'showAllLocalizationLink' => true,
-                    'showSynchronizationLink' => true,
                     'enabledControls' => [
                         'info' => true,
                         'new' => true,
@@ -110,7 +107,6 @@ return [
                         'sort' => false,
                         'hide' => true,
                         'delete' => true,
-                        'localize' => true,
                     ],
                 ],
             ],
